@@ -1,0 +1,87 @@
+.body{
+    min-height: 100%;
+    display: flex;
+    margin: auto;
+    margin-top: 100px;
+    flex-direction: column;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+}
+.contener{
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+.text{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.score, .best-score{
+    background-color: rgb(63, 55, 55);
+    border: 4px solid rgb(63, 55, 55);
+    height: 40px;
+    width: 40px;
+    font-size: 30px;
+    padding: 10px;
+    color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+    align-items: center;
+}
+.title{
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+    font-weight: 700;
+    margin: 0px;
+}
+.box{
+    display: grid;
+    grid-template-columns: repeat(10, 40px);
+    grid-template-rows: repeat(10, 40px);
+    gap: 1px;
+}
+.box.cell{
+    height: 40px;
+    width: 40px;
+    background-color: rgb(78, 65, 65);
+}
+.box.cell.apple{
+    background-size: 40px 40px;
+    background-image: url(img/apple.png);
+}
+.box.cell.snake{
+    height: 40px;
+    width: 40px;
+    background-color: rgba(137, 43, 226, 0.597);
+}
+.box.cell.snakeHead{
+    background-color: rgb(138, 43, 226);
+}
+.contener-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contener-box.death{
+    margin-top: 20px;
+    background-color: rgb(63, 55, 55);
+    color: red;
+    font-size: 20px;
+    height: 100px;
+    width: 200px;
+}
+.btn{
+    padding: 10px 15px;
+    color: white;
+    font-size: 30px;
+    background-color: rgb(63, 55, 55);
+}
+.btn:hover{
+    box-shadow: 2px 2px 5px rgb(0, 0, 0);
+    cursor: pointer;
+}
